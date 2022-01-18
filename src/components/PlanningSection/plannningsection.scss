@@ -1,12 +1,11 @@
 .planningSection {
   width: 100%;
   .planningSection_wrapper {
-    width: 1200px;
+    width: 1100px;
     margin: 0 auto;
     color: black;
     display: flex;
     flex-direction: column;
-    align-items: center;
     p {
       font-size: 1.7rem;
       padding: 0 20rem;
@@ -15,58 +14,207 @@
     }
     .trip_enquiry {
       width: 100%;
-      height: 60vh;
-      margin-top: 2rem;
+      height: auto;
       display: flex;
-      align-items: center;
+      margin-top: 4.5rem;
       justify-content: space-between;
+      position: relative;
       .trip_enquiry_left {
-          width:68%;
-          height: 100%;
-          border: 2px solid rgba(0,0,0,0.4);
-          padding: 2rem;
-          .trip_enquiry_left_top{
-              width:100% ;
-              height: 3rem;
+        width: 68%;
+        height: 100%;
+        .trip_enquiry_left_top {
+          width: 100%;
+          height: 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+          span {
+            font-size: 2.6rem;
+            font-weight: bold;
+          }
+          .right {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.7);
+          }
+        }
+        // form {
+        .form {
+          margin-bottom: 4.5rem;
+          width: 100%;
+          padding: 3rem;
+          border: 2px solid rgba(0, 0, 0, 0.2);
+          small {
+            font-size: 1.5rem;
+            color: rgba(0, 0, 0, 0.9);
+          }
+          .input_div {
+            width: 100%;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            .submit_button {
+              width: auto;
+              padding: 0.3rem 2rem;
+              height: 5rem;
               display: flex;
               align-items: center;
-              justify-content: space-between;
-              padding: 3rem 0;
-              border-bottom:1px solid rgba(0,0,0,0.4) ;
-              span{
-                  font-size: 2.6rem;
-                  font-weight: bold;
+              justify-content: center;
+              font-size: 2.3rem;
+              text-transform: uppercase;
+              background-color: rgb(163, 10, 68);
+              color: white;
+              border: none;
+              cursor: pointer;
+              align-self: center;
+              transition: all 300ms linear;
+              &:hover {
+                background-color: white;
+                color: rgb(163, 10, 68);
+                border: 1.8px solid rgb(163, 10, 68);
               }
-              .right{
-                  font-size: 1.8rem;
-                  font-weight: bold;
-                  color: rgba(0,0,0,0.7);
+            }
+            label {
+              font-size: 1.6rem;
+              color: black;
+            }
+            input,
+            textarea,
+            select {
+              width: 100%;
+              height: 4.5rem;
+              border: 1px solid rgba(0, 0, 0, 0.3);
+              box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+              outline: none;
+              font-size: 2rem;
+              padding: 0 1rem;
+              margin: 1rem 0;
+              &::placeholder {
+                color: grey;
+                font-size: 1.5rem;
               }
+              &[type="text"] {
+                font-weight: 100;
+              }
+              &:focus::placeholder {
+                color: transparent;
+              }
+            }
+            select {
+              width: 50%;
+              color: grey;
+              font-size: 1.5rem;
+              option {
+                font-size: 2rem;
+                color: black;
+              }
+            }
+            textarea {
+              width: 100%;
+              height: 10rem;
+              resize: none;
+            }
           }
+        }
       }
       .trip_enquiry_right {
-        width:30%;
-        height: 100%;
-        border: 1px solid red;
+        width: 30%;
+        height: auto;
+        position: sticky;
+        top: 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        .trip_enquiry_right_top{
+          width: 100%;
+          height: auto;
+          border: 2px solid rgba(0, 0, 0, 0.2);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+         .span{
+           border-bottom: 1px solid black;
+           padding-bottom: 2rem;
+            font-size: 1.8rem;
+
+          }
+          .icon_div{
+            font-size: 5rem;
+          }
+          .call{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.8);
+          }
+          .numb{
+            font-size: 2.3rem;
+            font-weight: bold;
+          }
+          .timings{
+            font-size: 1.8rem;
+            color: rgba(0,0,0,0.6);
+            text-align: center;
+          }
+        }
+        .relative{
+          position: relative;
+          height: 50vh;
+          width: 100%;
+          height: auto;
+          border: 2px solid rgba(0, 0, 0, 0.2);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          .circle{
+            width: 16rem;
+            height: 16rem;
+            border-radius: 50%;
+            border: 1px solid blue;
+            position: absolute;
+            top:-100%;
+          }
+        }
+
       }
     }
   }
+  .footer_div {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 1.9rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+      text-align: center;
+      font-weight: 200;
+    }
+  }
 }
+// }
 
 @media (max-width: 1200px) {
   .planningSection {
     width: 100%;
     .planningSection_wrapper {
       width: 95%;
-      // margin: 0 auto;
-      // color: black;
-      // display: flex;
-      // flex-direction: column;
-      // align-items: center;
+      margin: 0 auto;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       p {
-        // font-size: 1.7rem;
-        // padding: 0 20rem;
-        // text-align: center;
+        font-size: 1.7rem;
+        padding: 0 20rem;
+        text-align: center;
       }
     }
   }
