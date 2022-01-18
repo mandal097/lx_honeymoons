@@ -1,0 +1,37 @@
+.membership{
+    width: 100%;
+    .membership_wrapper{
+        width: 1200px;
+        margin: 0 auto;
+        padding: 3rem 0;
+        h1{
+            font-size: 6rem;
+            text-align: center;
+            padding: 0 19rem;
+            line-height: 0.9;
+            font-weight: 100;
+            text-transform: capitalize;
+        }
+        .membership_card_div{
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+           
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .membership{
+        width: 100%;
+        .membership_wrapper{
+            width: 95%;
+            .membership_card_div{
+                height: auto;
+            }
+        }
+    }
+}

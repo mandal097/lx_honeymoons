@@ -1,0 +1,73 @@
+.planningSection {
+  width: 100%;
+  .planningSection_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-size: 1.7rem;
+      padding: 0 20rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .trip_enquiry {
+      width: 100%;
+      height: 60vh;
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .trip_enquiry_left {
+          width:68%;
+          height: 100%;
+          border: 2px solid rgba(0,0,0,0.4);
+          padding: 2rem;
+          .trip_enquiry_left_top{
+              width:100% ;
+              height: 3rem;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 3rem 0;
+              border-bottom:1px solid rgba(0,0,0,0.4) ;
+              span{
+                  font-size: 2.6rem;
+                  font-weight: bold;
+              }
+              .right{
+                  font-size: 1.8rem;
+                  font-weight: bold;
+                  color: rgba(0,0,0,0.7);
+              }
+          }
+      }
+      .trip_enquiry_right {
+        width:30%;
+        height: 100%;
+        border: 1px solid red;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .planningSection {
+    width: 100%;
+    .planningSection_wrapper {
+      width: 95%;
+      // margin: 0 auto;
+      // color: black;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      p {
+        // font-size: 1.7rem;
+        // padding: 0 20rem;
+        // text-align: center;
+      }
+    }
+  }
+}
