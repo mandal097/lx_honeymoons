@@ -23,3 +23,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@keyframes updown {
+  0%{
+    top: 0rem;
+  }
+  100%{
+    top:-1rem;
+    left: 6rem;
+  }
+}
+@keyframes translate {
+  0%{
+    transform:translateX(40rem);
+  }
+  100%{
+    transform:translateX(0rem);
+  }
+}
+
+

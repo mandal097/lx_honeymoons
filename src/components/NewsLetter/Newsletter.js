@@ -4,7 +4,8 @@ import './newsletter.scss'
 import {
     FaFacebookF,
     FaInstagram,
-    FaYoutube
+    FaYoutube,
+    FaPhone
 } from 'react-icons/fa'
 
 const Newsletter = () => {
@@ -30,7 +31,17 @@ const Newsletter = () => {
                     </div>
                 </div>
                 <div className="news_letter_wrapper_right">
-                    <img src="https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNvY2lhbCUyMG1lZGlhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <div className="news_letter_wrapper_right_left">
+                        <span className="links">Credentials</span>
+                        <span className="links">Memberships</span>
+                        <span className="links">Planning </span>
+                    </div>
+                    <div className="news_letter_wrapper_right_right">
+                        <h3>Reach Us</h3>
+                        <span><FaPhone className='phone' /> (+91) 9899699991</span>
+                        <span><FaPhone className='phone'/> (+91) 9810006187</span>
+                        <span className='at'>© 2012-2013 by Luxury Honeymoons.</span>
+                    </div>
                 </div>
             </div>
         </div>

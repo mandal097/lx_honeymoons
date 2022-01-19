@@ -4,6 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  // background-color:black;
+  background-color: rgba(8, 7, 7, 0.911);
+  color: white;
   .news_letter_wrapper {
     width: 1100px;
     height: 95%;
@@ -25,7 +28,8 @@
       }
       p {
         font-size: 1.6rem;
-        color: rgba(0, 0, 0, 0.8);
+        color: white;
+        // color: rgba(0, 0, 0, 0.8);
       }
       .news_letter_email_div {
         width: 100%;
@@ -62,7 +66,8 @@
         }
       }
       .news_letter_socialhandles {
-        border-top: 1px solid rgba(0, 0, 0, 0.5);
+        border-top: 1px solid white;
+        // border-top: 1px solid rgba(0, 0, 0, 0.5);
         width: 100%;
         height: 15rem;
         margin-top: 2rem;
@@ -93,11 +98,56 @@
     .news_letter_wrapper_right {
       width: 50%;
       height: 100%;
-      img{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+     .news_letter_wrapper_right_left{
+       width: 40%;
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       padding: 2rem;
+       .links{
+         font-size: 1.8rem;
+         text-decoration: none;
+         display: flex;
+         align-items: center;
+         margin-top: 1rem;
+         transition: all 400ms linear;
+         cursor: pointer;
+         &:hover{
+           border-bottom: 1.4px solid white;
+         }
+       }
+     }
+     .news_letter_wrapper_right_right{
+      width: 58%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2rem;
+      h3{
+        font-size: 2.3rem;
+        font-weight: 100;
+        color: hotpink;
       }
+      span{
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+      }
+      .phone{
+        color: rgb(163, 10, 68) ;
+        font-size: 2.4rem;
+        margin-right: 1rem;
+      }
+      .at{
+        font-size: 1.5rem;
+        margin-top: 3rem;
+      }
+     }
     }
   }
 }

@@ -1,10 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './plannningsection.scss'
 import { FiPhoneCall } from 'react-icons/fi'
 import { BiTimeFive } from 'react-icons/bi'
+import PlanningModal from '../PlanningModal/PlanningModal'
 const PlanningSection = () => {
+    const [show, setShow] = useState(false)
+
+    const showModal = () => {
+        switch (show) {
+            case false:
+                setShow(true);
+                break;
+            case true:
+                setShow(false);
+                break;
+            default:
+                setShow(false)
+        }
+    }
+
     return (
         <div className='planningSection'>
+            {
+                show &&
+                <PlanningModal showModal={showModal} />
+            }
             <div className="planningSection_wrapper">
                 <p>We'll be in touch within 24 hours after you submit the form, matching you with a Travel Expert and setting up a time to talk – over email, phone or video call.</p>
                 <div className="trip_enquiry">
@@ -38,7 +58,7 @@ const PlanningSection = () => {
                         <div className="form">
                             <div className="trip_enquiry_left_top">
                                 <span>YOUR DETAILS</span>
-                                <div className="right">Excellent</div>
+                                {/* <div className="right">Excellent</div> */}
                             </div>
                             <div className="input_div">
                                 <label htmlFor="">Your name*</label>
@@ -91,11 +111,10 @@ const PlanningSection = () => {
                             <span className="timings">Monday - Friday | 9am - 11.00pm GMT
                                 (excluding national holidays)</span>
                         </div>
-                        <div className="relative">
-                            <span className="timings">Flexible booking terms – including 100% refunds up to 30 days before departure</span>
+                        <div className="trip_enquiry_right_top relative">
                             <div className="circle">
-
-                            </div>
+                                <img src="https://images.pexels.com/photos/96381/pexels-photo-96381.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" /> </div>
+                            <span className="timings">Flexible booking terms – including 100% refunds up to 30 days before departure</span>
                         </div>
                     </div>
                 </div>
@@ -103,9 +122,11 @@ const PlanningSection = () => {
             <div className="footer_div">
                 <p>Package holidays are sold by Black Tomato as an agent for Hays Tour Operating Ltd, ATOL 10531. <br />
                     Please see our booking conditions for more information. © 2022 Black Tomato.</p>
+                <div className="callback" onClick={showModal}>Call Me <br /> Back</div>
             </div>
         </div>
     )
 }
 
 export default PlanningSection
+
