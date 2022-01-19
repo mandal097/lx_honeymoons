@@ -1,14 +1,19 @@
 import React from 'react'
+import styled from 'styled-components'
 import Planningheader from '../components/Planningheader/Planningheader'
 import PlanningSection from '../components/PlanningSection/PlanningSection'
 
 const Planning = () => {
     return (
-        <div>
+        <Container>
             <Planningheader/>
             <PlanningSection/>
-        </div>
+        </Container>
     )
 }
+const Container = styled.div`
+height:100vh;
+overflow-y: scroll;
+`
 
 export default Planning

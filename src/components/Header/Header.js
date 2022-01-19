@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './header.scss'
 import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
 
-const Header = () => {
+const Header = ({margin}) => {
     const [bg, setBg] = useState(false)
 
 
@@ -20,22 +21,23 @@ const Header = () => {
 
     }, [])
     return (
-        <Container className='header' b={bg}>
+        <Container className='header' b={bg} style={{marginTop:`${margin}`}}>
             <div className='header_wrapper'>
-                <div className="left_header">Luxury Livings</div>
+                <NavLink to='/' className="left_header">Luxury Livings</NavLink>
                 <div className="right_header">
-                    <a className='navs'
+                    {/* <a className='navs'
                         href="/"
                         onClick={e => {
                             let inspiration = document.getElementById("inspiration");
                             e.preventDefault();  // Stop Page Reloading
                             inspiration && inspiration.scrollIntoView({ behavior: "smooth", block: "center"});
                         }}
-                    >Inspiration</a>
+                    >Inspiration</a> */}
+                    <NavLink to='/inspiration' className="navs">Inspiration</NavLink>
                     <a href='#' className="navs">Honeymoons</a >
                     <a href='#' className="navs">Travel with Kids</a >
                     <a href='#' className="navs">Wellness Escapes</a >
-                    <a href='#' className="navs">About Us</a >
+                    <NavLink to='/aboutus' className="navs">About Us</NavLink >
                 </div>
             </div>
         </Container>
@@ -46,7 +48,7 @@ const Header = () => {
 const Container = styled.div`
   width: 100%;
   height: 40px;
-  background-color: white;
+  /* background-color: white; */
   color: black;
   font-family: "Baloo 2", cursive;
   display: flex;

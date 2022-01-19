@@ -4,8 +4,10 @@ import { hotels } from '../../dummydata/hotelsImg'
 import {
     ArrowRightOutlined 
 } from '@ant-design/icons'
+import { useNavigate } from 'react-router-dom'
 const Insipiration = () => {
     const [num, setNum] = useState(4)
+    const navigate = useNavigate()
 
     const handleClick = () => {
         switch (num) {
@@ -56,7 +58,9 @@ const Insipiration = () => {
                         }
                     </div>
                     <div className="more" onClick={handleClick}>{num===4?"See More..":" See Less.."}</div>
-                    <div className="go_to_inspiration_page">
+                    <div
+                    onClick={()=>navigate('/inspiration')}
+                    className="go_to_inspiration_page">
                         see more details about hotels and their description <ArrowRightOutlined className='icon' />
                     </div>
                 </div>

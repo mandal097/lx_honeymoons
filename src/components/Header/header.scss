@@ -1,5 +1,4 @@
 .header {
-  z-index: 1000000;
   .header_wrapper {
     width: 1000px;
     margin: 0 auto;
@@ -10,6 +9,9 @@
     justify-content: space-between;
     .left_header {
       width: 30%;
+      text-decoration: none;
+      color: rgb(163, 10, 68) ;
+      font-weight: bold;
     }
     .right_header {
       width: 70%;
