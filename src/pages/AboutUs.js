@@ -1,13 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
+import AboutUsContent from '../components/AboutUsSections/AboutUsContents/AboutUsContent'
+import About from '../components/AboutUsSections/AboutUsLandingPage.js/About'
 import Header from '../components/Header/Header'
+import Newsletter from '../components/NewsLetter/Newsletter'
 import Planning from '../components/Planning/Planning'
 
 const AboutUs = () => {
     return (
         <Container>
-            <Planning fixed='fixed'/>
+            <Planning  />
             <Header />
+            <About />
+            <AboutUsContent />
+            <Newsletter />
         </Container>
     )
 }

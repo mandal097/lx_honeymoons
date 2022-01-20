@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import {
-    CloseOutlined 
+    CloseOutlined
 } from '@ant-design/icons'
-const PlanningModal = ({showModal}) => {
+const PlanningModal = ({ showModal }) => {
     return (
         <Container >
             <Wrapper>
+                <LogoDiv>Logo here</LogoDiv>
                 <Cancel onClick={showModal}><CloseOutlined /></Cancel>
                 <Top>
                     <H2>Ready to chat?</H2>
@@ -43,6 +44,22 @@ flex-direction:column;
 align-items:center;
 justify-content:space-evenly;
 position:relative;
+`
+const LogoDiv = styled.div`
+position:absolute;
+top:-1.2rem;
+left:-1.6rem;
+width:8rem;
+height:8rem;
+border-radius:50%;
+border:1px solid white;
+background-color:  rgb(163, 10, 68);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:1.5rem;
+color:white;
+font-weight:bold;
 `
 
 const Top = styled.div`

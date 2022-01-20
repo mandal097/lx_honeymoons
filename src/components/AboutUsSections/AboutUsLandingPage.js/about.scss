@@ -1,0 +1,58 @@
+.about_landingPage {
+  width: 100%;
+  height: 70vh;
+  .about_landingPage_wrapper {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .about_landingPage_wrapper_top {
+      width: 80%;
+      height: 75%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h3 {
+        font-size: 3rem;
+        color: black;
+      }
+      p {
+        font-size: 1.7rem;
+        color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+      }
+    }
+    .about_landingPage_wrapper_bottom {
+      width: 80%;
+      height: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      a{
+          font-size: 2rem;
+          text-decoration: none;
+          color: rgba(0,0,0,0.8);
+      }
+      .scroll_bar{
+          font-size: 3rem;
+          height: 4rem;
+          width: 0.3rem;
+          background-color: rgb(141, 118, 118);
+          animation: scroll 3s ease-in  infinite;
+      }
+    }
+  }
+}
+
+@media (max-width:1200px) {
+  .about_landingPage{
+    .about_landingPage_wrapper{
+      width: 90%;
+    }
+  }
+}

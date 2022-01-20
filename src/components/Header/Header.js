@@ -53,7 +53,7 @@ const Container = styled.div`
   font-family: "Baloo 2", cursive;
   display: flex;
   align-items: center;
-  margin-top: 70px;
+  /* margin-top: 70px; */
   margin-bottom: 20px;
   transition:all 300ms linear;
   /* position: ${props => props.b ? "absolute" : 'normal'}; */

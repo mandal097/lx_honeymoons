@@ -5,7 +5,7 @@ import Planning from '../components/Planning/Planning'
 const Inspiration = () => {
     return (
         <Container>
-            <Planning fixed='fixed'/>
+            <Planning />
             <Header />
         </Container>
     )

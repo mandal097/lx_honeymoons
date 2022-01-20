@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import HowItWorks from '../components/HowItWorks/HowItWorks'
 import Insipiration from '../components/Inspiration/Insipiration'
@@ -12,13 +11,12 @@ const Home = () => {
     return (
         <Container>
             <Planning fixed='fixed' />
-            <Header />
+            <Header margin="70px" />
             <LandingPage />
             <Insipiration />
             <HowItWorks />
             <Membership />
             <Newsletter />
-            {/* <Footer /> */}
         </Container>
     )
 }
