@@ -4,24 +4,27 @@ import AboutUsContent from '../components/AboutUsSections/AboutUsContents/AboutU
 import About from '../components/AboutUsSections/AboutUsLandingPage.js/About'
 import Header from '../components/Header/Header'
 import Newsletter from '../components/NewsLetter/Newsletter'
-import Planning from '../components/Planning/Planning'
 
 const AboutUs = () => {
+
     return (
-        <Container>
-            {/* <Planning  /> */}
-            <Header />
-            <About />
-            <AboutUsContent />
-            <Newsletter />
-        </Container>
+        <>
+            <Container>
+                <Header position='absolute'/>
+                <About />
+                <AboutUsContent />
+                <Newsletter />
+            </Container>
+        </>
     )
 }
 const Container = styled.div`
-/* height:100vh; */
-width:100%;
-/* overflow-y:scroll; */
+height:100vh;
+/* width:100%; */
+overflow-y:scroll;
 overflow-x:hidden;
+position:relative;
 `
+
 
 export default AboutUs

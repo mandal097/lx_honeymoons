@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './header.scss'
 import styled from 'styled-components'
-import { NavLink } from 'react-router-dom'
+import { NavLink  } from 'react-router-dom'
 
-const Header = ({margin}) => {
+const Header = ({ margin, black,position }) => {
     const [bg, setBg] = useState(false)
 
 
@@ -21,9 +21,9 @@ const Header = ({margin}) => {
 
     }, [])
     return (
-        <Container className='header' b={bg} style={{marginTop:`${margin}`}}>
+        <Container className='header' b={bg} style={{ marginTop: `${margin}`, backgroundColor: `${black}`, position:`${position}` }}>
             <div className='header_wrapper'>
-                <NavLink to='/' className="left_header">Luxury Livings</NavLink>
+                <NavLink to='/' className="left_header"> Luxury Livings</NavLink>
                 <div className="right_header">
                     {/* <a className='navs'
                         href="/"
@@ -33,7 +33,7 @@ const Header = ({margin}) => {
                             inspiration && inspiration.scrollIntoView({ behavior: "smooth", block: "center"});
                         }}
                     >Inspiration</a> */}
-                    <NavLink to='/inspiration' className="navs">Inspiration</NavLink>
+                    <NavLink to='#' className="navs">Inspiration</NavLink>
                     <a href='#' className="navs">Honeymoons</a >
                     <a href='#' className="navs">Travel with Kids</a >
                     <a href='#' className="navs">Wellness Escapes</a >

@@ -7,12 +7,11 @@ import LandingPage from '../components/LandingPage/LandingPage'
 import Marque from '../components/Marque/Marque'
 import Membership from '../components/Membership/Membership'
 import Newsletter from '../components/NewsLetter/Newsletter'
-import Planning from '../components/Planning/Planning'
+// import Planning from '../components/Planning/Planning'
 const Home = () => {
     return (
         <Container>
-            {/* <Planning fixed='fixed' /> */}
-            <Header />
+            <Header position='fixed' />
             <LandingPage />
             <Marque />
             <Insipiration />
@@ -24,7 +23,10 @@ const Home = () => {
 }
 
 const Container = styled.div`
-
+/* height:100vh; */
+/* overflow-y:hidden; */
+width:100%;
+overflow-x:hidden;
 `
 
 export default Home
