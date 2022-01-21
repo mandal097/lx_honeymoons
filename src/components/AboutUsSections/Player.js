@@ -33,7 +33,7 @@ align-items:center;
 justify-content:center;
 position:fixed;
 top:0;
-z-index:1000;
+z-index:1000001;
 `
 const Wrapper = styled.div`
 width:85%;

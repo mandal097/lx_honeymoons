@@ -1,0 +1,36 @@
+.marque{
+    width:100%;
+    height: 15rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .marque_wrapper{
+        width: 100%;
+        height: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .marquee{
+            height: 100%;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .marq_div{
+                width: 16%;
+                height: 100%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 3.5rem;
+                img{
+                    width: 80%;
+                    height: 80%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

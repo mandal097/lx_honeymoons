@@ -1,32 +1,47 @@
 .header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  // right: 0;
+  // left: 0;
+  // bottom: 0;
   .header_wrapper {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
     height: 100%;
-    font-size: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     .left_header {
-      width: 30%;
+      width: 40%;
       text-decoration: none;
-      color: rgb(163, 10, 68) ;
+      color: white;
       font-weight: bold;
+      font-size: 4rem;
+      font-family: 'Zilla Slab', serif;
+      letter-spacing: 2px;
+      transition: all 400ms linear;
+      &:hover{
+        color: rgb(163, 10, 68) ;
+      }
     }
     .right_header {
-      width: 70%;
+      width: 60%;
       display: flex;
       align-items: center;
       justify-content: space-between;
       cursor: pointer;
       .navs {
         border-bottom: 2px solid transparent;
-        transition: all 300ms linear;
-        color: black;
+        transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        color: white;
+        font-size: 2rem;
         text-decoration: none;
       }
       .navs:hover {
-        border-bottom: 2px solid  black;
+        border-bottom: 2px solid white;
+        color: rgb(163, 10, 68) ;
       }
     }
   }

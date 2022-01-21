@@ -1,16 +1,25 @@
 .landing_page {
   width: 100%;
-  height: 80vh;
-  margin-bottom: 2rem;
-  margin-top:-1rem;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.7));
+  .background{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-color: red;
+    z-index: -1;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
   .landing_page_wrapper {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
-      url("https://images.unsplash.com/photo-1602002418206-1f0c0ebdaef4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGhvbmV5bW9vbiUyMGlzbGFuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,25 +30,54 @@
       align-items: center;
       justify-content: center;
       h3 {
-        font-size: 3rem;
+        font-size: 6rem;
         color: white;
+        font-family: 'Zilla Slab', serif;
+        margin-bottom: 3rem;
       }
-      button {
-        width: 15rem;
-        height: 4rem;
-        font-size: 1.7rem;
-        text-transform: uppercase;
+      p{
+        font-size: 2rem;
         color: white;
-        background-color: black;
-        border: 1px solid white;
+        text-align: center;
+      }
+      .button {
+        width: auto;
+        height: 4rem;
+        padding: 1rem 5rem;
+        background-color: rgb(197, 7, 102);
+        border: 2px solid rgb(185, 10, 127);
+        color: white;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
+        margin-top: 2rem;
         transition: all 300ms linear;
         &:hover {
-          color: black;
           background-color: white;
-          border: 2px solid black;
+          color: rgb(197, 7, 102);
         }
       }
+      // button {
+      //   width: 15rem;
+      //   height: 4rem;
+      //   font-size: 1.7rem;
+      //   text-transform: uppercase;
+      //   color: white;
+      //   background-color: black;
+      //   border: 1px solid white;
+      //   cursor: pointer;
+      //   transition: all 300ms linear;
+      //   &:hover {
+      //     color: black;
+      //     background-color: white;
+      //     border: 2px solid black;
+      //   }
+      // }
     }
   }
 }

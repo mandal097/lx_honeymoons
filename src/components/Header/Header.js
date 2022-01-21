@@ -9,7 +9,7 @@ const Header = ({margin}) => {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if (window.scrollY > 10) {
+            if (window.scrollY > 100) {
                 setBg(true)
             } else {
                 setBg(false)
@@ -47,17 +47,14 @@ const Header = ({margin}) => {
 
 const Container = styled.div`
   width: 100%;
-  height: 40px;
-  /* background-color: white; */
+  height: 8rem;
   color: black;
   font-family: "Baloo 2", cursive;
   display: flex;
   align-items: center;
-  /* margin-top: 70px; */
   margin-bottom: 20px;
   transition:all 300ms linear;
-  /* position: ${props => props.b ? "absolute" : 'normal'}; */
-  /* display: ${props => props.b ? "none" : 'block'}; */
+  background-color: ${props => props.b ? "black" : 'none'};
 `
 
 export default Header

@@ -9,7 +9,7 @@ import Planning from '../components/Planning/Planning'
 const AboutUs = () => {
     return (
         <Container>
-            <Planning  />
+            {/* <Planning  /> */}
             <Header />
             <About />
             <AboutUsContent />
@@ -18,9 +18,9 @@ const AboutUs = () => {
     )
 }
 const Container = styled.div`
-height:100vh;
+/* height:100vh; */
 width:100%;
-overflow-y:scroll;
+/* overflow-y:scroll; */
 overflow-x:hidden;
 `
 
