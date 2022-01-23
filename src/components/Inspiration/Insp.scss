@@ -111,6 +111,7 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        transition: all 400ms linear;
         .hotel_highlights_card {
           height: 35vh;
           flex: 1 1 260px;
@@ -125,7 +126,7 @@
             object-fit: cover;
             transition: all 400ms linear;
             &:hover {
-              transform: scale(1.5);
+              transform: scale(1.25);
             }
           }
         }

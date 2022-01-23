@@ -6,7 +6,7 @@ const Planning = ({fixed}) => {
         <div className='planning' style={{position:`${fixed}`}}>
             <div className="planning_wrapper">
                 <div className="planning_left">
-                    <div className="logo">logo</div>
+                    <div className="logo">Luxury <br /> Honeymoons </div>
                     <span className="contact_no">+91 8826764772</span>
                     <p className='timing'>We're open today until 11.00pm GMT</p>
                 </div>

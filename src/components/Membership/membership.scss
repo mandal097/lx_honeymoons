@@ -28,9 +28,31 @@
     .membership{
         width: 100%;
         .membership_wrapper{
-            width: 95%;
+            width: 100%;
+            h1{
+                padding: 0;
+                font-size: 3rem;
+            }
             .membership_card_div{
                 height: auto;
+            }
+        }
+    }
+}
+@media (max-width:350px) {
+    .membership{
+        width: 100%;
+        .membership_wrapper{
+            width: 100%;
+            h1{
+                padding: 0;
+                font-size: 3rem;
+            }
+            .membership_card_div{
+                width: 100%;
+                height: auto;
+                flex-wrap: nowrap;
+                flex-direction: column;
             }
         }
     }

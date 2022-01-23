@@ -48,15 +48,29 @@ code {
   }
 }
 
-@keyframes scroll {
+@keyframes scrol {
   0% {
-    height: 6rem;
+    height: 3rem;
   }
 
   50% {
     height: 0rem;
   }
+
   100% {
-    height: 6rem;
+    height: 3rem;
+  }
+}
+@keyframes bounce {
+  0% {
+    margin-top: 3rem;
+  }
+
+  50% {
+    margin-top: 0rem;
+  }
+
+  100% {
+    margin-top: 3rem;
   }
 }

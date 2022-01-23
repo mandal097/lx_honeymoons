@@ -39,9 +39,8 @@ const AboutUsContent = () => {
                             <div className="about_us_contents_wrapper_top_section_img_vid "
                             >
                                 <img
-                                    className='img_vid'
+                                    className='img_vid big_img'
                                     src='https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdGVsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60' alt="img"
-                                    style={{ height: '80vh' }}
                                 />
                             </div>
                             <div className="about_us_contents_wrapper_top_section_content">
@@ -60,7 +59,7 @@ const AboutUsContent = () => {
                                 <img
                                     className='img_vid '
                                     src='https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60' alt="img"
-                                    style={{ height: '40vh' }}
+                                    style={{ height: '45vh' }}
                                 />
                                 <div className="playerBtn" onClick={handlePlayer}><CaretRightFilled className='icon' /></div>
                                 <div className="playerTxt">Play me</div>
@@ -88,18 +87,16 @@ const AboutUsContent = () => {
                             </div>
                             <div className="about_us_contents_wrapper_top_section_img_vid">
                                 <img
-                                    className='img_vid'
+                                    className='img_vid big_img'
                                     src='https://images.unsplash.com/photo-1580913709631-8de3edebfd2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1vbnVtZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60' alt="img"
-                                    style={{ height: '90vh' }}
                                 />
                             </div>
                         </div>
                         <div className="about_us_contents_wrapper_top_section">
                             <div className="about_us_contents_wrapper_top_section_img_vid">
                                 <img
-                                    className='img_vid'
+                                    className='img_vid big_img'
                                     src='https://images.unsplash.com/photo-1601614064799-7667efadb7ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZXhwbG9yaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60' alt="img"
-                                    style={{ height: '90vh' }}
                                 />
                             </div>
                             <div className="about_us_contents_wrapper_top_section_content">
@@ -116,9 +113,8 @@ const AboutUsContent = () => {
                             </div>
                             <div className="about_us_contents_wrapper_top_section_img_vid">
                                 <img
-                                    className='img_vid'
+                                    className='img_vid big_img'
                                     src='https://images.unsplash.com/photo-1617168025020-d300a4b192ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGhvdGVscyUyMHdpdGglMjBwbGFuZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60' alt="img"
-                                    style={{ height: '90vh' }}
                                 />
                             </div>
                         </div>

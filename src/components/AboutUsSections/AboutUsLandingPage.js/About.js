@@ -1,6 +1,8 @@
 import React from 'react'
 import './about.scss'
-
+import {
+    ArrowDownOutlined 
+} from '@ant-design/icons'
 const About = () => {
     return (
         <div className='about_landingPage' id='aboutus'>
@@ -19,7 +21,7 @@ const About = () => {
                             scroll && scroll.scrollIntoView({ behavior: "smooth", block: "start" })
                         }}
                     >Scroll Down</a>
-                    <div className="scroll_bar"></div>
+                    <div className="scroll_bar"><ArrowDownOutlined className='scroll'/></div>
                 </div>
             </div>
         </div>

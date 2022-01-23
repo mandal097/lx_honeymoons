@@ -53,6 +53,9 @@
           .img_vid {
             width: 90%;
           }
+          .big_img{
+            height: 85vh;
+          }
           img {
             object-fit: cover;
           }
@@ -76,6 +79,7 @@
             font-size: 1.7rem;
             color: rgba(0, 0, 0, 0.7);
             font-weight: 100;
+            text-align: justify;
           }
         }
       }
@@ -111,7 +115,79 @@
   .about_us_contents {
     width: 100%;
     .about_us_contents_wrapper {
-      width: 90%;
+      width: 95%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .about_us_contents {
+    width: 100%;
+    .about_us_contents_wrapper {
+      width: 100%;
+      .about_us_contents_wrapper_top{
+        width: 100%;
+        .about_us_contents_wrapper_top_section{
+          flex-direction: column;
+          width: 100%;
+          .about_us_contents_wrapper_top_section_img_vid{
+            width: 100%;
+            img{
+              margin: 0.5rem 0;
+            }
+          }
+          .about_us_contents_wrapper_top_section_content{
+            width: 95%;
+            margin-top: 1rem;
+            p{
+              font-size: 1.9rem;
+            }
+          }
+        }
+      }
+    }
+    .bannner{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      padding: 2rem 0.4rem;
+      .banner_content_div{
+        width: 95%;
+        padding: 0 0.1rem;
+        p{
+          font-size: 1.6rem;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .about_us_contents {
+    width: 100%;
+    .about_us_contents_wrapper {
+      width: 100%;
+      .about_us_contents_wrapper_top{
+        width: 100%;
+        .about_us_contents_wrapper_top_section{
+          flex-direction: column;
+          width: 100%;
+          .about_us_contents_wrapper_top_section_img_vid{
+            width: 100%;
+            .big_img{
+              height: 50vh;
+            }
+          }
+          .about_us_contents_wrapper_top_section_content{
+            width: 95%;
+            margin-top: 1rem;
+            p{
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
     }
   }
 }

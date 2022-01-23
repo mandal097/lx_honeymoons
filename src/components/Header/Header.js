@@ -23,7 +23,7 @@ const Header = ({ margin, black,position }) => {
     return (
         <Container className='header' b={bg} style={{ marginTop: `${margin}`, backgroundColor: `${black}`, position:`${position}` }}>
             <div className='header_wrapper'>
-                <NavLink to='/' className="left_header"> Luxury Livings</NavLink>
+                <NavLink to='/' className="left_header"> Luxury Honeymoons</NavLink>
                 <div className="right_header">
                     {/* <a className='navs'
                         href="/"

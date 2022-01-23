@@ -3,7 +3,6 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 1);
   top: 0;
-  // right: 0;
   left: 0;
   .planning_wrapper {
     width: 1200px;
@@ -19,8 +18,10 @@
       align-items: center;
       justify-content: space-between;
       .logo {
-        font-size: 4rem;
-        color: white;
+        font-size: 2rem;
+        color: rgb(233, 14, 163);
+        font-weight: bold;
+        line-height: 1.6rem;
       }
       .contact_no {
         color: white;
@@ -79,6 +80,56 @@
         width: 40%;
         .button{
           width: auto;
+        }
+      }
+    }
+  }
+}
+@media(max-width:900px){
+  .planning{
+    .planning_wrapper{
+      width: 95%;
+      margin: 0 auto;
+      .planning_left{
+        width: 70%;
+      }
+      .planning_right{
+        width: 30%;
+        .button{
+          width: auto;
+        }
+      }
+    }
+  }
+}
+@media(max-width:700px){
+  .planning{
+    padding: 1rem 0;
+    height: auto;
+    .planning_wrapper{
+      width: 95%;
+      margin: 0 auto;
+      flex-direction: column;
+      .planning_left{
+        width: 100%;
+        .logo {
+          font-size: 2rem;
+        }
+        .contact_no {
+          font-size: 2rem;
+          font-weight: 400;
+          border-right: none;
+          padding-right: 0.6rem;
+        }
+        .timing {
+          display: none;
+        }
+      }
+      .planning_right{
+        width: 100%;
+        margin-top: 1rem;
+        .button{
+          width: 100%;
         }
       }
     }

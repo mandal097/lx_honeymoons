@@ -7,7 +7,7 @@ import LandingPage from '../components/LandingPage/LandingPage'
 import Marque from '../components/Marque/Marque'
 import Membership from '../components/Membership/Membership'
 import Newsletter from '../components/NewsLetter/Newsletter'
-// import Planning from '../components/Planning/Planning'
+import Planning from '../components/Planning/Planning'
 const Home = () => {
     return (
         <Container>
@@ -17,6 +17,7 @@ const Home = () => {
             <Insipiration />
             <HowItWorks />
             <Membership />
+            <Planning />
             <Newsletter />
         </Container>
     )

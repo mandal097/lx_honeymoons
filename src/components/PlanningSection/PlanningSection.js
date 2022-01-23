@@ -40,15 +40,15 @@ const PlanningSection = () => {
                             </div>
                             <div className="input_div">
                                 <label htmlFor="">When would you like to go?</label>
-                                <input style={{ width: '40%' }} type="text" placeholder='Write  the place where you want to visit' />
+                                <input className='half'  type="text" placeholder='Write  the place where you want to visit' />
                             </div>
                             <div className="input_div">
                                 <label htmlFor="">How long for?</label>
-                                <input style={{ width: '40%' }} type="text" placeholder='duration of trip' />
+                                <input className='half' type="text" placeholder='duration of trip' />
                             </div>
                             <div className="input_div">
                                 <label htmlFor="">How many people are travelling?</label>
-                                <input style={{ width: '40%' }} type="text" placeholder='Number of people wants to travel' />
+                                <input className='half' type="text" placeholder='Number of people wants to travel' />
                             </div>
                             <div className="input_div">
                                 <label htmlFor="">Any other comments or requests?</label>
@@ -74,7 +74,7 @@ const PlanningSection = () => {
                             </div>
                             <div className="input_div">
                                 <label htmlFor="">Telephone*</label>
-                                <input style={{ width: '50%' }} type="text" placeholder='Phone Number' />
+                                <input className='half'  type="text" placeholder='Phone Number' />
                             </div>
                             <div className="input_div">
                                 <label htmlFor="">How did you hear about us?</label>
@@ -113,8 +113,9 @@ const PlanningSection = () => {
                         </div>
                         <div className="trip_enquiry_right_top relative">
                             <div className="circle">
-                                <img src="https://images.pexels.com/photos/96381/pexels-photo-96381.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" /> </div>
-                            <span className="timings">Flexible booking terms – including 100% refunds up to 30 days before departure</span>
+                                <img src="https://images.pexels.com/photos/96381/pexels-photo-96381.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+                            </div>
+                            <span >Flexible booking terms – including 100% refunds up to 30 days before departure</span>
                         </div>
                     </div>
                 </div>
