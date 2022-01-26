@@ -4,7 +4,7 @@ import Planning from './pages/Planning'
 import { Routes, Route } from 'react-router-dom'
 import Inspiration from './pages/Inspiration'
 import AboutUs from './pages/AboutUs'
-
+  
 const App = () => {
   return (
     <div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Header from '../components/Header/Header'
+// import HomepageAbout from '../components/HomepageAbout'
 import HowItWorks from '../components/HowItWorks/HowItWorks'
 import Insipiration from '../components/Inspiration/Insipiration'
 import LandingPage from '../components/LandingPage/LandingPage'
@@ -17,6 +18,7 @@ const Home = () => {
             <Insipiration />
             <HowItWorks />
             <Membership />
+            {/* <HomepageAbout/> */}
             <Planning />
             <Newsletter />
         </Container>

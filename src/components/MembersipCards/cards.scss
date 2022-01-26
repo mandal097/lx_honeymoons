@@ -11,6 +11,7 @@
     padding: 1rem;
     background-color: rgba(234, 241, 243, 0.849);
     border-radius: 2rem;
+    transition: all 400ms linear;
     img{
         width: 16rem;
         height: 16rem;
@@ -26,6 +27,10 @@
         font-size: 1.8rem;
         color: rgba(0,0,0,0.5);
         text-align: center;
+    }
+    &:hover{
+        transform: translateY(-2rem);
+        box-shadow: 0px 7px 15px -1px rgb(240, 31, 153);
     }
 }
 

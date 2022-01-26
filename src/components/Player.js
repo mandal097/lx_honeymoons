@@ -5,11 +5,10 @@ import {
 } from '@ant-design/icons'
 import ReactPlayer from 'react-player'
 
-const Player = ({ handlePlayer }) => {
-    let url = 'https://youtu.be/x2VR8k6F2w0'
+const Player = ({ setShowPlayer , url }) => {
     return (
         <Container>
-            <Cancel onClick={handlePlayer}><CloseOutlined /></Cancel>
+            <Cancel onClick={() => setShowPlayer(false)}><CloseOutlined /></Cancel>
             <Wrapper>
                 <ReactPlayer
                     url={url}

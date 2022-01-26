@@ -13,6 +13,12 @@
       width: 30%;
       font-size: 3rem;
       color: white;
+      transition: all 400ms linear;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover{
+        color: pink;
+      }
     }
     .right_side {
       width: 70%;

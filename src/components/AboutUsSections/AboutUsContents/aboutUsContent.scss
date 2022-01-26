@@ -39,6 +39,9 @@
             justify-content: center;
             color: black;
             cursor: pointer;
+            &:hover{
+              background-color: grey;
+            }
             .icon {
               margin-left: 0.5rem;
             }
@@ -49,6 +52,10 @@
             left: auto;
             font-size: 3rem;
             color: white;
+            cursor: pointer;
+            &:hover{
+              color: grey;
+            }
           }
           .img_vid {
             width: 90%;

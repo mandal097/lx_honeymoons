@@ -3,7 +3,7 @@ import './aboutUsContent.scss'
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useState } from 'react/cjs/react.development';
-import Player from '../Player'
+import Player from '../../Player'
 import {
     CaretRightFilled
 } from '@ant-design/icons'
@@ -11,18 +11,11 @@ import {
 Aos.init()
 const AboutUsContent = () => {
     const [showPlayer, setShowPlayer] = useState(false)
+    const [url, setUrl] = useState('')
 
     const handlePlayer = () => {
-        switch (showPlayer) {
-            case false:
-                setShowPlayer(true)
-                break;
-            case true:
-                setShowPlayer(false)
-                break;
-            default:
-                setShowPlayer(false)
-        }
+        setShowPlayer(true)
+        setUrl('https://youtu.be/x2VR8k6F2w0')
     }
     // useEffect(() => {
     //     Aos.init({ duration: 2000 });
@@ -30,7 +23,7 @@ const AboutUsContent = () => {
     return (
         <>
             {
-                showPlayer && <Player handlePlayer={handlePlayer} />
+                showPlayer && <Player setShowPlayer={setShowPlayer} url={url} />
             }
             <div className='about_us_contents' id='scroll'>
                 <div className='about_us_contents_wrapper'>
@@ -55,14 +48,14 @@ const AboutUsContent = () => {
                                 <p>So our role is to make sure that your travels are filled with moments like these. With us, you 'll see a destination in a different light -  through the Black Tomato lens - and discover things you won't find out about any other way.
                                     Equally, if you're not sure where to travel but you do feel the need to escape, give yourself a treat or a challenge, or learn something new… we can arrange that too. Our advice is full of insight and inspiration, carefully curated to suit you. So is your bespoke itinerary.</p>
                             </div>
-                            <div className="about_us_contents_wrapper_top_section_img_vid">
+                            <div className="about_us_contents_wrapper_top_section_img_vid darkOnhover">
                                 <img
                                     className='img_vid '
                                     src='https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60' alt="img"
                                     style={{ height: '45vh' }}
                                 />
                                 <div className="playerBtn" onClick={handlePlayer}><CaretRightFilled className='icon' /></div>
-                                <div className="playerTxt">Play me</div>
+                                <div className="playerTxt" onClick={handlePlayer}>Play me</div>
                             </div>
                         </div>
                         <div className="about_us_contents_wrapper_top_section">

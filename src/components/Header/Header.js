@@ -33,7 +33,7 @@ const Header = ({ margin, black,position }) => {
                             inspiration && inspiration.scrollIntoView({ behavior: "smooth", block: "center"});
                         }}
                     >Inspiration</a> */}
-                    <NavLink to='#' className="navs">Inspiration</NavLink>
+                    <NavLink to='/inspiration' className="navs">Inspiration</NavLink>
                     <a href='#' className="navs">Honeymoons</a >
                     <a href='#' className="navs">Travel with Kids</a >
                     <a href='#' className="navs">Wellness Escapes</a >
